@@ -4,6 +4,14 @@
 ꧁IslaM_SobhY꧂
 
  */
+ //all you do is just making a node and a top pointer to this node then you have to make this top points to null at first
+ // when the user use push function you create a new node then make it's item equals the value and it's pointer points to
+ // top value then make the top value then make the top points to the new node  null-<firstNode-<secondNode-<topNode and so one
+
+
+ //when you wanna make pop you know that the node on the top is connected to to node before it by a pointer
+ // you just make a temp value holds the top pointer of kind node then you have to make to equals to top->next
+ // then delete the temp value which points to a memory holds the element
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
@@ -56,7 +64,7 @@ public:
         node *temp = top;
         top = top->next;
         temp = temp->next = nullptr;
-        delete temp;
+          delete temp;
     }
     //------------------------------------------------------------------------//
 
