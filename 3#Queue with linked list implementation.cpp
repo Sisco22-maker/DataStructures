@@ -80,8 +80,8 @@ class Myqueue
         }
         node *temp = Front;
         Front = Front->next;
-        temp->next = nullptr;
         delete temp;
+        temp->next = nullptr;
            --Size;
     }
     //----------------------------------------------------------------//
@@ -116,8 +116,8 @@ class Myqueue
          {
              del = Front;
              Front = del->next;
-             del = nullptr;
              delete del;
+             del = nullptr;
          }
          Back = nullptr;
          Size = 0;
